@@ -8,7 +8,7 @@ def client():
     return app.test_client()
 
 
-def test_home_page(client):
+def test_post_notebook(client):
     test_book_title = 'my testing book title'
     response = client.post('/notebooks', json={
         'title': 'my testing book title'

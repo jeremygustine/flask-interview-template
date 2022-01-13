@@ -16,3 +16,9 @@ pipenv shell
 ```
 FLASK_ENV=development flask run
 ```
+
+### Run tests
+
+```
+pytest
+```
