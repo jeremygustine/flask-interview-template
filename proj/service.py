@@ -1,7 +1,7 @@
 
 from injector import inject
 
-from NotebookDatabase import NotebookDatabase
+from proj.database import NotebookDatabase
 
 
 class NotebookService:

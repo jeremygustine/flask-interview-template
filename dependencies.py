@@ -1,6 +1,6 @@
 from injector import singleton
-from NotebookDatabase import NotebookDatabase
-from NotebookService import NotebookService
+from proj.database import NotebookDatabase
+from proj.service import NotebookService
 
 
 def configure(binder):
