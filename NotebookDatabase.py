@@ -1,13 +1,11 @@
 class NotebookDatabase:
     def __init__(self):
-        super().__init__()
+        self.notebook_db = []
 
-    def connect(self):
-        # TODO: implementation for a MySQL database connection
-        print("Successfully connected to MySQL database!")
-
-    def get(self):
-        return "success"  # Query the database here
-
-    def insert(self):
-        pass
+    def insert(self, notebook):
+        entity = {
+            'id': len(self.notebook_db) + 1,
+            'title': notebook['title']
+        }
+        self.notebook_db.append(entity)
+        return entity

@@ -14,5 +14,5 @@ pipenv shell
 ### Run the app
 
 ```
-flask run
+FLASK_ENV=development flask run
 ```
