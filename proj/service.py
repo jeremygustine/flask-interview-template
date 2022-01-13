@@ -12,3 +12,10 @@ class NotebookService:
 
     def insert_notebook(self, notebook):
         return self.db.insert(notebook)
+
+    def get_all_notebooks(self):
+        return self.db.get_all()
+
+    def get_notebook_by_id(self, id):
+        #TODO call get on the db object and provide the id
+        pass

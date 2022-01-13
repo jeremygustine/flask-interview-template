@@ -8,9 +8,12 @@ from dependencies import configure
 app = Flask(__name__)
 
 app.add_url_rule('/notebooks', view_func=view.insert_notebook, methods=['POST'])
+app.add_url_rule('/notebooks', view_func=view.get_all_notebooks, methods=['GET'])
+app.add_url_rule('/notebooks/<id>', view_func=view.get_notebook_by_id, methods=['GET'])
 
-# TODO get_all_notebooks
 # TODO get_notebook_by_id
+
+
 # TODO update notebook title
 # TODO add validation
 
