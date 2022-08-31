@@ -7,3 +7,9 @@ def test_insert():
     result = subject.insert({'title': 'test notebook'})
     assert len(subject.notebook_db) == 1
     assert result == {'id': 1, 'title': 'test notebook'}
+
+# TODO get_all_notebooks
+# TODO get_notebook_by_id
+# TODO update notebook title
+# TODO delete notebook
+# TODO add validation

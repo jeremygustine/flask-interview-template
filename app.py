@@ -9,11 +9,6 @@ app = Flask(__name__)
 
 app.add_url_rule('/notebooks', view_func=view.insert_notebook, methods=['POST'])
 
-# TODO get_all_notebooks
-# TODO get_notebook_by_id
-# TODO update notebook title
-# TODO delete notebook
-# TODO add validation
 
 # Setup Flask Injector, this has to happen AFTER routes are added
 FlaskInjector(app=app, modules=[configure])
